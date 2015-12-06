@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brianmissedthebus.mytru.Settings">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="3" >
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/backButton7"
+                android:src="@drawable/arrow_blue"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="my"
+                android:id="@+id/textView15"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#6b9b83"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:singleLine="true"
+                android:layout_weight="1.25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRU"
+                android:id="@+id/textView16"
+                android:textColor="#052b6a"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#052b6a"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Currently Logged In"
+                android:id="@+id/studentLoggedIn"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#052b6a" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Log Out"
+                android:id="@+id/logOutButton"
+                android:background="@drawable/btnbg"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="@drawable/btntext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button Click Audio"
+                android:id="@+id/textView18"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#052b6a" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="On"
+                android:id="@+id/clickButton"
+                android:background="#6b9b83"
+                android:textColor="#052b6a"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

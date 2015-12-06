@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.brianmissedthebus.mytru.ComingSoon"
+    android:id="@+id/relLayout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/backButton2"
+            android:src="@drawable/arrow_blue"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my"
+            android:id="@+id/textView11"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#6b9b83"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:singleLine="true"
+            android:layout_weight="1.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRU"
+            android:id="@+id/textView12"
+            android:textColor="#052b6a"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#052b6a"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon!"
+        android:id="@+id/soonText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#052b6a" />
+</RelativeLayout>

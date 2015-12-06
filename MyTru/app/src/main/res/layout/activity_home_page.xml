@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/backButton5"
+                android:src="@drawable/arrow_blue"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="my"
+                android:id="@+id/textView3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#6b9b83"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:singleLine="true"
+                android:layout_weight="1.25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRU"
+                android:id="@+id/textView4"
+                android:textColor="#052b6a"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#052b6a"
+            android:layout_marginBottom="20dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/courseLayout"
+                android:layout_marginRight="20dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scheduleButton"
+                    android:src="@drawable/schedule_icon_blue"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course Schedule"
+                    android:id="@+id/courseText"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="#052b6a"
+                    android:minLines="2"
+                    android:clickable="true"
+                    android:contextClickable="false"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/mapLayout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navButton"
+                    android:src="@drawable/nav_icon_blue"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Campus Map"
+                    android:id="@+id/mapText"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="gravity"
+                    android:textColor="#052b6a"
+                    android:minLines="2"
+                    android:textStyle="bold"
+                    android:clickable="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/busLayout"
+                android:layout_marginRight="20dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busButton"
+                    android:src="@drawable/bus_icon_blue"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bus Schedule"
+                    android:id="@+id/busText"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="#052b6a"
+                    android:minLines="2"
+                    android:textStyle="bold"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/settingsLayout" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settingsButton"
+                    android:src="@drawable/settings_icon_blue"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:id="@+id/settingsText"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="gravity"
+                    android:textColor="#052b6a"
+                    android:minLines="2"
+                    android:textStyle="bold"
+                    android:clickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
